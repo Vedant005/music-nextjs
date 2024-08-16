@@ -19,10 +19,13 @@ function Navbar({ className }: { className?: string }) {
             setActive={setActive}
             active={active}
             item="home" // Unique identifier for this menu item
-          >
-            test
-          </MenuItem>
+          ></MenuItem>
         </Link>
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Our Courses "
+        ></MenuItem>
       </Menu>
     </div>
   );
