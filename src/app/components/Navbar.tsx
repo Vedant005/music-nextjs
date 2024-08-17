@@ -21,11 +21,16 @@ function Navbar({ className }: { className?: string }) {
             item="home" // Unique identifier for this menu item
           ></MenuItem>
         </Link>
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item="Our Courses "
-        ></MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Our Courses ">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/courses"> All Courses</HoveredLink>
+            <HoveredLink href="/courses"> All Courses</HoveredLink>{" "}
+            <HoveredLink href="/courses"> All Courses</HoveredLink>{" "}
+            <HoveredLink href="/courses"> All Courses</HoveredLink>{" "}
+            <HoveredLink href="/courses"> All Courses</HoveredLink>{" "}
+            <HoveredLink href="/courses"> All Courses</HoveredLink>
+          </div>
+        </MenuItem>
       </Menu>
     </div>
   );
